@@ -1,0 +1,111 @@
+
+@import "var.css";
+
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0px;
+    background-color: var(--colFondo);
+    background-size: 5%;
+}
+
+header{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    padding: 30px;
+}
+
+header > div:nth-child(1){
+    background-size: cover;
+    height: 100%;
+    filter: blur(5px) brightness(0.6);
+    border-radius: 20px;
+    
+}
+
+header > div:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+header > div:nth-child(2) > h1{
+    font-family: 'Against', sans-serif;
+    margin: 0;
+    font-weight: 700;
+    color: white;
+    text-shadow: 4px 4px 2px var(--colFondo);
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header > div:nth-child(2) > h1:nth-child(2){
+    font-size: 11rem;
+    letter-spacing: 1rem;
+}
+
+
+video{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.loaderContent{
+    background-color: var(--colFondo);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+
+.header{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header > div{
+    background-size: cover;
+    height: 100%;
+}
+    

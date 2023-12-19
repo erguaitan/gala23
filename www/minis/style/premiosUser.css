@@ -1,0 +1,61 @@
+@import "varUser.css";
+
+
+.listaPremiosUser{
+    display: flex;
+    margin: 0 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: auto;
+    top: 6rem;
+    bottom: 6rem;
+    flex-direction: column;
+}
+
+.listaPremiosUser > div{
+    background-color: var(--colBorde);
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+    font-family: "Gogh", "sans-serif";
+    text-transform: uppercase;
+    /*width: 40%;*/
+    text-align: center;
+    font-size: 1rem;
+}
+
+.listaPremiosUser > .activo{
+    background-color: #2cba2c;
+}
+
+.listaPremiosUser::-webkit-scrollbar {
+    width: 0;
+}
+
+.enviarPremiosUser{
+    position: fixed;
+    background-color: var(--colFondo);
+    bottom: 0;
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.enviarPremiosUser > button{
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: white;
+    color: var(--colFondo);
+    font-family: "Gogh", "sans-serif";
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.enviarPremiosUser > button:disabled{
+    background-color: rgba(255, 255, 255, 0.5);
+}

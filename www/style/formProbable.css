@@ -1,0 +1,60 @@
+.contForm{
+    padding: 50px;
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.contPreg, .contInput{
+    display: flex;
+    flex-direction: row;
+}
+
+.preg, input{
+    background-color: var(--colBorde);
+    padding: 20px;
+    margin: 15px;
+    font-family: "Gogh", "sans-serif";
+    color: white;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    background-color: white;
+    color: black;
+}
+
+button{
+    margin: 15px;
+    background-color: var(--colFondo);
+    border-radius: 20px;
+    padding: 20px;
+    font-family: "Gogh", "sans-serif";
+    color: white;
+    font-size: 1.4rem;
+    border: 0;
+}
+
+.butEnviar{
+    position: absolute;
+    width: 100%;
+    background-color: var(--colFondo);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.butEnviar > button{
+    background-color: white;
+    border: 0;
+    color: var(--colFondo);
+    width: 50%;
+    margin: 20px;
+}

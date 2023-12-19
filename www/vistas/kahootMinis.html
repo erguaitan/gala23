@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premios Atunes 23</title>
+    <link rel="stylesheet" href="../style/inicio.css">
+    <link rel="stylesheet" href="../style/kahootMinis.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <header>
+        <div style="background-image: url(../media/fondos/f23.JPG);"></div>
+    </header>
+    <div class="titulo" style="display: flex;">
+        <h1>kahoot atún</h1>
+        <div class="contentQR">
+            <div id="qrcode"></div>
+        </div>
+        <div class="numUsers" id="kahootTit">0 / 0</div>
+    </div>
+    <div class="pregunta" style="display: none;">
+        <h2>preg xx</h2>
+        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, delectus.</h3>
+        <div class="numUsers" id="kahootPreg">0 / 0</div>
+    </div>
+    <div class="votaciones" style="display: none;">
+        <h2>preg XX</h2>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tenetur voluptatum consequatur modi recusandae.</h3>
+        <div class="opcVotaciones">
+            <div class="opc" data-opc="kahoot1">
+                <div class="user">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, minima!</div>
+                <div class="num">0</div>
+            </div>
+            <div class="opc" data-opc="kahoot2">
+                <div class="user">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, minima!</div>
+                <div class="num">0</div>
+            </div>
+            <div class="opc" data-opc="kahoot3">
+                <div class="user">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, minima!</div>
+                <div class="num">0</div>
+            </div>
+            <div class="opc" data-opc="kahoot4">
+                <div class="user">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, minima!</div>
+                <div class="num">0</div>
+            </div>
+        </div>
+    </div>
+    <div class="resolucion" style="display: none;">
+        <h2>preg XX</h2>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tenetur voluptatum consequatur modi recusandae.</h3>
+        <div class="resultado">
+            <div class="user">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, adipisci.</div>
+            <div class="imgUsers">
+                <div style="background-image: url(../media/user/pred.png);"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="../js/kahootMinis.js"></script>
+</body>
+</html>

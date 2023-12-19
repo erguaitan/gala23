@@ -1,0 +1,108 @@
+
+.titulo{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo > h2{
+    font-family: "Against", "sans-serif";
+    font-size: 2.3rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px var(--colFondo);
+}
+
+.contentAcertar{
+    display: flex;
+    flex-direction: column;
+}
+
+.contentAcertar > h4{
+    font-family: "Gogh", "sans-serif";
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px var(--colFondo);
+    margin: 0;
+    margin-top: 40px;
+}
+
+.contentAcertar > h6{
+    font-family: "Gogh", "sans-serif";
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px var(--colFondo);
+    padding: 0.6rem;
+    margin: 0;
+    padding: 13px 30px;
+}
+
+.enviarPremiosUser{
+    position: fixed;
+    background-color: var(--colFondo);
+    bottom: 0;
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.enviarPremiosUser > button{
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: white;
+    color: var(--colFondo);
+    font-family: "Gogh", "sans-serif";
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.enviarPremiosUser > button:disabled{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.opcAcertar{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.opcAcertar > div{
+    background-color: var(--colBorde);
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+    font-family: "Gogh", "sans-serif";
+    text-transform: uppercase;
+    width: 40%;
+    text-align: center;
+    font-size: 1rem;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.opcAcertar > .activo{
+    background-color: #2cba2c;
+}
+
+.opcAcertar > .error{
+    background-color: #cc2323;
+}
+
+.opcAcertar::-webkit-scrollbar {
+    width: 0;
+}

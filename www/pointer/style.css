@@ -1,0 +1,46 @@
+@import "../../style/var.css";
+
+body{
+    background-color: var(--colFondo);
+}
+
+.gridCont{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.gridItem{
+    background-color: white;
+    color: var(--colFondo);
+    height: 60px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: "Gogh", "sans-serif";
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nom{
+    background-color: var(--colBorde);
+    color: black;
+    filter: brightness(170%);
+    overflow: hidden;
+}
+
+.minis{
+    background-color: #6ae76a;
+    color: black;
+}
+
+@media screen and (max-width: 392px) {
+    .gridItem {
+      font-size: 1rem; /* Cambia el tamaño de fuente a 1rem cuando el ancho de la pantalla sea menor que 392px */
+    }
+}

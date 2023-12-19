@@ -1,0 +1,58 @@
+@import "var.css";
+
+.p23{
+    position: absolute;
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.p23 > .row{
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.p23 > .row > .prem{
+    background-color: var(--colBorde);
+    background-size: 20%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 9%;
+    padding: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.p23 > .top > .prem{
+    width: 14%;
+    background-color: var(--colFondo);
+}
+
+.p23 > .row > .prem > img{
+    aspect-ratio: 1/1;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+.p23 > .row > .prem > p{
+    font-family: 'Gogh', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: .4rem;
+    color: rgb(255, 255, 255);
+    text-shadow: .1rem .1rem .1rem rgb(0, 0, 0);
+}
+
+.p23 > .top > .prem > p{
+    font-size: 1.3rem;
+}
+
+.p23 > .top{
+    height: 40%;
+}

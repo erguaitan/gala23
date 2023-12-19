@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Against';
+    src: url('../fonts/against\ regular.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-ExtraBold.otf') format('opentype'); 
+}
+
+@font-face {
+    font-family: 'Sixties';
+    src: url('../fonts/Sixties.ttf') format('truetype'); 
+}
+
+:root{
+    --colBorde: #2c65a5; /*#caad09*/
+    --colFondo: #0d3868;
+}

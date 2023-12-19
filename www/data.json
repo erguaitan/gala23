@@ -1,0 +1,206 @@
+{
+  "premios": [
+    "mvp",
+    "mejora",
+    "desmejora",
+    "noveno",
+    "momento",
+    "meme",
+    "foto",
+    "video",
+    "canción",
+    "cardumen",
+    "edit",
+    "locura",
+    "follador",
+    "outfit"
+  ],
+  "titulo": [
+    "mvp",
+    "mayor mejora",
+    "mayor desmejora",
+    "noveno atún",
+    "mejor momento",
+    "mayor meme",
+    "mejor foto",
+    "mejor video",
+    "canción atún",
+    "cardumen",
+    "mejor edit",
+    "mayor locura",
+    "mayor follador",
+    "mejor outfit"
+  ],
+  "ganadores": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "meme_4",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "outfit_3"
+  ],
+  "nominados": [
+    [
+      "Alberto",
+      "Mateos",
+      "Jime",
+      "Asier"
+    ],
+    [
+      "Jime",
+      "Joche",
+      "Alberto"
+    ],
+    [
+      "José",
+      "Navarro",
+      "Juan"
+    ],
+    [
+      "Ángela M.",
+      "Mario E.",
+      "Veracruz F."
+    ],
+    [
+      "Boda de Ana",
+      "Concurso de saltos",
+      "Visita al museo marítimo",
+      "Comidas en Bilbao"
+    ],
+    [
+      "Medio corazón de Jopi",
+      "Hashtag",
+      "Juan en los scouts",
+      "Si o no"
+    ],
+    [
+      "Orgía atún",
+      "Jimeidón",
+      "Juan presidiario",
+      "En los huevos de la araña"
+    ],
+    [
+      "Triple Juanja invertido",
+      "Desfase de los Gymbros",
+      "Jime chorreante"
+    ],
+    [
+      "El Nano - Melendi",
+      "Wiggy - Young Miko",
+      "El Mambo - Kiko Rivera"
+    ],
+    [
+      "Cibeles",
+      "Pekus",
+      "Scouts",
+      "Cesei"
+    ],
+    [
+      "Alfombra azul 2022",
+      "Vacaciones pibes vs pibas",
+      "La profecía de Yoshi"
+    ],
+    [
+      "Asier en Effetá",
+      "Jime de boda borracho",
+      "Joche comprando un coche",
+      "Viaje de Jime a Italia"
+    ],
+    [
+      "José",
+      "Juan",
+      "Joche"
+    ],
+    [
+      "Atunes obreros",
+      "Jime Índigo",
+      "Jime fantasmal"
+    ]
+  ],
+  "nomImg": [
+    [
+      "alberto",
+      "mateos",
+      "jime",
+      "asier"
+    ],
+    [
+      "jime",
+      "joche",
+      "alberto"
+    ],
+    [
+      "koux",
+      "navarro",
+      "juan"
+    ],
+    [
+      "moli",
+      "mario",
+      "vera"
+    ],
+    [
+      "momento_1",
+      "momento_2",
+      "momento_3",
+      "momento_4"
+    ],
+    [
+      "meme_1",
+      "meme_2",
+      "meme_3",
+      "meme_4"
+    ],
+    [
+      "foto_1",
+      "foto_2",
+      "foto_3",
+      "foto_4"
+    ],
+    [
+      "video_1",
+      "video_2",
+      "video_3"
+    ],
+    [
+      "cancion_1",
+      "cancion_2",
+      "cancion_3"
+    ],
+    [
+      "cardumen_1",
+      "cardumen_2",
+      "cardumen_3",
+      "cardumen_4"
+    ],
+    [
+      "edit_1",
+      "edit_2",
+      "edit_3"
+    ],
+    [
+      "locura_1",
+      "locura_2",
+      "locura_3",
+      "locura_4"
+    ],
+    [
+      "koux",
+      "juan",
+      "joche"
+    ],
+    [
+      "outfit_1",
+      "outfit_2",
+      "outfit_3"
+    ]
+  ]
+}

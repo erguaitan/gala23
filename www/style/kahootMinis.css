@@ -1,0 +1,193 @@
+
+.titulo, .pregunta{
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo > h1{
+    font-family: "Against", "sans-serif";
+    color: white;
+    margin: 0;font-weight: 700;
+    text-shadow: 4px 4px 2px var(--colFondo);
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contentQR{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+#qrcode{
+    padding: 10px;
+    background-color: var(--colFondo);
+}
+
+.numUsers{
+    position: absolute;
+    bottom: 60px;
+    left: 80px;
+    z-index: 99;
+    color: var(--colFondo);
+    text-shadow: 1px 1px 1px white;
+    font-family: "Gogh", "sans-serif";
+    font-size: 3.5rem;
+}
+
+.pregunta > h2{
+    font-family: "Gogh", "sans-serif";
+    color: white;
+    margin: 0;
+    text-shadow: 4px 4px 2px var(--colFondo);
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pregunta > h3{
+    font-family: "Gogh", "sans-serif";
+    color: white;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 4px 4px 2px var(--colFondo);
+    font-size: 3rem;
+    text-align: center;
+    width: 70%;
+}
+
+.votaciones, .resolucion{
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.votaciones > h2, .resolucion > h2{
+    font-family: "Gogh", "sans-serif";
+    color: white;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 4px 4px 2px var(--colFondo);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 70%;
+    margin-top: 30px;
+}
+
+.votaciones > h3, .resolucion > h3{
+    font-family: "Gogh", "sans-serif";
+    color: white;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 4px 4px 2px var(--colFondo);
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 70%;
+    margin-top: 30px;
+}
+
+.votaciones > .opcVotaciones{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.votaciones > .opcVotaciones > .opc{
+    margin: 20px;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+}
+
+.votaciones > .opcVotaciones > .opc > .user{
+    background-color: var(--colBorde);
+    width: 25%;
+    border-radius: 0 20px 20px 0;
+    color: white;
+    font-family: "Gogh", "sans-serif";
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+}
+
+.votaciones > .opcVotaciones > .opc > .num{
+    background-color: var(--colBorde);
+    width: 20%;
+    border-radius: 0 20px 20px 0;
+    color: white;
+    font-family: "Gogh", "sans-serif";
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.votaciones > .opcVotaciones > .opc > .user{
+    width: 80%;
+    background-color: var(--colFondo);
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resolucion > .resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+}
+
+.resolucion > .resultado > .user{
+    background-color: var(--colFondo);
+    border-radius: 20px;
+    width: 90%;
+    padding: 20px;
+    color: white;
+    font-size: 2rem;
+    font-family: "Gogh", "sans-serif";
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.resolucion > .resultado > .imgUsers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.resolucion > .resultado > .imgUsers > div{
+    background-size: cover;
+    background-position: center;
+    border: 3px solid var(--colBorde);
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 100%;
+}

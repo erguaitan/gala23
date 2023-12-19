@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premios Atunes 23</title>
+    <link rel="stylesheet" href="../style/inicio.css">
+    <link rel="stylesheet" href="../style/formAcertar.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <header>
+        <div style="background-image: url(../media/fondos/f23.JPG);"></div>
+        <div style="filter: blur(5px);">
+            <h1>PREMIOS ATUNES</h1>
+            <h1>2023</h1>
+        </div>
+    </header>
+
+    <div class="contForm">
+        <div class="contInput">
+            <input type="text" id="pregAcertar" placeholder="Inserta pregunta">
+            <select id="solAcertar" name="atunes">
+                <option value="" selected></option>
+                <option value="asier">asier</option>
+                <option value="koux">koux</option>
+                <option value="joche">joche</option>
+                <option value="jime">jime</option>
+                <option value="juan">juan</option>
+                <option value="mateos">mateos</option>
+                <option value="navarro">navarro</option>
+                <option value="alberto">alberto</option>
+            </select>
+        </div>
+        <button>AÑADIR</button>
+        <div class="contPreg">
+        
+        </div>
+    </div>
+    <div class="butEnviar">
+        <button>ENVIAR</button>
+    </div>
+
+    <script src="../js/formAcertar.js"></script>
+</body>
+</html>

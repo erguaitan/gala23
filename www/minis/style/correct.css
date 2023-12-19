@@ -1,0 +1,31 @@
+@import "varUser.css";
+
+.correct{
+    background-color: rgba(127, 255, 127, 0.541);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.correct > h2{
+    font-family: "Gogh", "sans-serif";
+    color: white;
+    margin: 0;
+    text-shadow: 2px 2px 0px rgb(32, 58, 11);
+}
+
+.correct > div{
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--colFondo);
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}

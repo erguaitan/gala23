@@ -1,0 +1,57 @@
+@import "var.css";
+
+
+#ganador{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    padding: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+#ganador > img{
+    border: 15px solid var(--colBorde);
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px black;
+    transform: scale(80%);
+}
+
+#txtGanador{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#txtGanador > h4{
+    color: white;
+    font-family: 'Against', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 3.5rem;
+    text-shadow: 3px 3px 2px var(--colBorde);
+    text-align: center;
+}
+
+#txtGanador > h3{
+    color: white;
+    font-family: 'Gogh', sans-serif;
+    margin: 0;
+    margin-top: 70px;
+    font-size: 3.5rem;
+    text-shadow: 3px 3px 2px black;
+    text-align: center;
+}
+
+#txtGanador > h2{
+    color: white;
+    font-family: 'Against', sans-serif;
+    margin: 0;
+    font-size: 5rem;
+    letter-spacing: .7rem;
+    text-shadow: 3px 3px 2px var(--colBorde);
+    text-align: center;
+}

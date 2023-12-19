@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premios Atunes 23</title>
+    <link rel="stylesheet" href="../style/inicio.css">
+    <link rel="stylesheet" href="../style/formKahoot.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <header>
+        <div style="background-image: url(../media/fondos/f23.JPG);"></div>
+        <div style="filter: blur(5px);">
+            <h1>PREMIOS ATUNES</h1>
+            <h1>2023</h1>
+        </div>
+    </header>
+
+    <div class="contForm">
+        <div class="contInput">
+            <input type="text" id="pregKahoot" placeholder="Inserta pregunta">
+            <select id="solKahoot" name="atunes">
+                <option value="" selected>Elige</option>
+                <option value="0">Opción 1</option>
+                <option value="1">Opción 2</option>
+                <option value="2">Opción 3</option>
+                <option value="3">Opción 4</option>
+            </select>
+        </div>
+        <div class="contOpcInp">
+            <input type="text" id="opcKahoot1" placeholder="Opción 1">
+            <input type="text" id="opcKahoot2" placeholder="Opción 2">
+            <input type="text" id="opcKahoot3" placeholder="Opción 3">
+            <input type="text" id="opcKahoot4" placeholder="Opción 4">
+        </div>
+        <button>AÑADIR</button>
+        <div class="contPreg">
+        </div>
+    </div>
+    <div class="butEnviar">
+        <button>ENVIAR</button>
+    </div>
+
+    <script src="../js/formKahoot.js"></script>
+</body>
+</html>

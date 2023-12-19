@@ -1,0 +1,56 @@
+@import "var.css";
+
+#nominados{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#nominados > h3{
+    font-family: 'Against', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 4px 4px 2px var(--colBorde);
+    font-size: 5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    height: 20%;
+    transform: translateY(25px);
+}
+
+.nlist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 100px;
+}
+
+.nlist > div{
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--colBorde);
+    box-shadow: 3px 3px 2px black;
+    width: 100%;
+
+}
+
+.nlist > div > img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.nlist > div > p{
+    color: white;
+    text-shadow:  2px 2px 2px black;
+    font-family: 'Gogh', sans-serif;
+    font-size: 1.8rem;
+    margin: 15px;
+    text-align: center;
+}

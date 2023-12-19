@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Against';
+    src: url('../fonts/against\ regular.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-ExtraBold.otf') format('opentype'); 
+}
+
+@font-face {
+    font-family: 'Sixties';
+    src: url('../fonts/Sixties.ttf') format('truetype'); 
+}
+
+:root{
+    --colBorde: #4885ca; /*#caad09*/
+    --colFondo: #19569c;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--colFondo);
+    background-size: 5%;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+header > div{
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    filter: blur(5px) brightness(0.6);
+    border-radius: 20px;
+    
+}
+
+h1{
+    font-family: "Against", "sans-serif";
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 2rem;
+}

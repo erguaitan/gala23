@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^4.7.2"
+  },
+  "name": "gala-atunes-23",
+  "description": "��#\u0000 \u0000p\u0000r\u0000e\u0000m\u0000i\u0000o\u0000s\u0000a\u0000t\u0000u\u0000n\u00002\u00003\u0000\r\u0000 \u0000",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

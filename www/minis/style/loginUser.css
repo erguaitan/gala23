@@ -1,0 +1,54 @@
+@import "varUser.css";
+
+#userForm{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+input{
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "Gogh", "sans-serif";
+    color: black;
+}
+
+input[type="file"]{
+    color: white;
+    background-color: var(--colBorde);
+}
+
+#butSend{
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 10px;
+
+    text-transform: uppercase;
+    font-family: "Gogh", "sans-serif";
+    background-color: var(--colFondo);
+    color: white;
+    border: 0;
+}
+
+#userForm > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgUser{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--colFondo);
+}

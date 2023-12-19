@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premios Atunes 23</title>
+    <link rel="stylesheet" href="../style/inicio.css">
+    <link rel="stylesheet" href="../style/premiosMinis.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <header>
+        <div style="background-image: url(../media/fondos/f23.JPG);"></div>
+        <div style="filter: blur(5px);">
+            <h1>PREMIOS ATUNES</h1>
+            <h1>2023</h1>
+        </div>
+    </header>
+    <div class="contentQR">
+        <div id="qrcodePremiosMinis"></div>
+    </div>
+    <div class="contenedor">
+        <div class="premio">
+            <div class="titulo">Foto</div>
+            <div class="users" style="display: none;">
+            </div>
+        </div>
+        <div class="premio">
+            <div class="titulo">Video</div>
+            <div class="users" style="display: none;">
+            </div>
+        </div>
+        <div class="premio">
+            <div class="titulo">Edit</div>
+            <div class="users" style="display: none;">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script>const socket = io('/premios2Minis');</script>
+    <script>localStorage.setItem("mini", "premios2")</script>
+    <script src="../js/premiosMinis.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+@import "var.css";
+
+.contenedor{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.premio{   
+    margin: 30px 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.premio > .titulo{
+    padding: 10px;
+    background-color: var(--colBorde);
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-family: "Gogh", "sans-serif";
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.premio > .users{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.premio > .users > div{
+    background-size: cover;
+    background-position: center;
+    border: 3px solid var(--colBorde);
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 100%;
+}
+
+.contentQR{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+#qrcodePremiosMinis{
+    padding: 10px;
+    background-color: var(--colFondo);
+}

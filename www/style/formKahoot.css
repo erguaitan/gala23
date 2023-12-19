@@ -1,0 +1,113 @@
+.contForm{
+    padding: 50px;
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.contInput{
+    display: flex;
+    flex-direction: row;
+}
+
+.contPreg{
+    display: flex;
+    flex-direction: column;
+}
+
+.preg, #pregKahoot, select{
+    background-color: var(--colBorde);
+    padding: 20px;
+    margin: 15px;
+    font-family: "Gogh", "sans-serif";
+    color: white;
+    width: 80%;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.preg{
+    width: auto;
+    flex: 1;
+}
+
+#pregKahoot, select{
+    background-color: white;
+    color: black;
+}
+
+.contOpcInp{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.contOpcInp > input{
+    background-color: white;
+    color: black;
+    width: 25%;
+    padding: 20px;
+    margin: 15px;
+    font-family: "Gogh", "sans-serif";
+    border-radius: 20px;
+    font-size: 1.4rem;
+}
+
+select{
+    width: 20%;
+    text-align: center;
+    justify-content: center;
+}
+
+button{
+    margin: 15px;
+    background-color: var(--colFondo);
+    border-radius: 20px;
+    padding: 20px;
+    font-family: "Gogh", "sans-serif";
+    color: white;
+    font-size: 1.4rem;
+    border: 0;
+}
+
+.butEnviar{
+    position: absolute;
+    width: 100%;
+    background-color: var(--colFondo);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.butEnviar > button{
+    background-color: white;
+    border: 0;
+    color: var(--colFondo);
+    width: 50%;
+    margin: 20px;
+}
+
+.contSol{
+    display: flex;
+    flex-direction: row;
+}
+
+.opc, .sol{
+    background-color: var(--colBorde);
+    color: white;
+    width: 25%;
+    padding: 20px;
+    margin: 15px;
+    font-family: "Gogh", "sans-serif";
+    border-radius: 20px;
+    font-size: 1.4rem;
+}
+
+.sol{
+    background-color: green;
+}

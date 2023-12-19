@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios Atunes 23</title>
+    <link rel="stylesheet" href="../style/varUser.css">
+    <link rel="stylesheet" href="../style/premiosUser.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <header>
+        <div style="background-image: url(../../media/fondos/f23.JPG);"></div>
+    </header>
+    <h1>premios atunes 2023</h1>
+    <div class="listaPremiosUser">
+        <div data-id="0">Locura</div>
+        <div data-id="1">Follador</div>
+        <div data-id="2">Outfit</div>        
+    </div>
+    <div class="enviarPremiosUser">
+        <button disabled>enviar</button>
+    </div>
+
+    <script src="../js/verCookie.js"></script>
+    <script>const socket = io('/premios23/premios1');</script>
+    <script src="../js/premiosUser.js"></script>
+</body>
+</html>
