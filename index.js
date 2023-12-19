@@ -237,6 +237,41 @@ io.of("/pointer").on("connection", (socket) => {
         io.of("/acertarMinis").emit("CAMBIO", url);
         io.of("/probableMinis").emit("CAMBIO", url);
         io.of("/kahootMinis").emit("CAMBIO", url);
+
+        const jsonFilePath = "www/minis.json";
+        fs.readFile(jsonFilePath, 'utf8', (err, data) => {
+            if (err) {
+                console.error('Error al leer el archivo JSON', err);
+                return;
+            }
+            let urlCurrent;
+            const jsonData = JSON.parse(data);
+            
+            if(url == "premios1Minis"){
+                urlCurrent = "premios1";
+            }else if (url == "premios2Minis"){
+                urlCurrent = "premios2";
+            }else if (url == "probableMinis"){
+                urlCurrent = "probableUser";
+            }else if (url == "acertarMinis"){
+                urlCurrent = "acertarUser";
+            }else if (url == "kahootMinis"){
+                urlCurrent = "kahootUser";
+            }else{
+                urlCurrent = "login";
+            }
+
+            jsonData.current = urlCurrent;
+        
+            const newData = JSON.stringify(jsonData, null, 2);
+        
+            fs.writeFile(jsonFilePath, newData, 'utf8', (err) => {
+                if (err) {
+                    console.error('Error al escribir en el archivo JSON', err);
+                return;
+                }
+            });
+        });
     });
     socket.on("PRESNOM", (premio) => {
         console.log("/pointer - PRESNOM - "+ premio);
