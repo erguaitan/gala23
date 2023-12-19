@@ -1,7 +1,7 @@
 const socket = io('/premios23/login');
 
 if (verCookie("usuario")!= ""){
-    window.location.href = "/premios23/correct"
+    window.location.href = "/premios23/wait"
 }else{
     document.getElementById("butSend").addEventListener("click", (e)=>{
         
