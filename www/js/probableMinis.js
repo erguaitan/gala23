@@ -74,6 +74,7 @@ function resetrespuestas(){
     document.querySelectorAll(".opc").forEach(opcAtun => {
         opcAtun.style.display = "none";
     });
+    opcVot = 0
 }
 
 //RECIBE SOCKET CAMBIO
