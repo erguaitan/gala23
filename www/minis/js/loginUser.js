@@ -26,11 +26,11 @@ if (verCookie("usuario")!= ""){
                 reader.readAsDataURL(imgInput);
     
                 crearCookie("usuario", userInput);
-                window.location.href ="/premios23/correct";
+                window.location.href ="/premios23/wait";
             }
         })
         .catch(error => console.error("Error al cargar el archivo JSON: " + error));
-        
+
     });
     
     document.getElementById("inpImg").addEventListener('change', function (e) {

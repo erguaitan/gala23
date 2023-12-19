@@ -27,6 +27,7 @@ app.use('/kahootMinis', express.static(path.join(__dirname, 'www/vistas'), { ind
 app.use('/gala23', express.static(path.join(__dirname, 'www/vistas'), { index: 'gala23.html' }));
 app.use('/premios23', express.static(path.join(__dirname, 'www/minis')));
 app.use('/premios23/login', express.static(path.join(__dirname, 'www/minis/vistas'), { index: 'loginUser.html' }));
+app.use('/premios23/wait', express.static(path.join(__dirname, 'www/minis/vistas'), { index: 'wait.html' }));
 app.use('/premios23/premios1', express.static(path.join(__dirname, 'www/minis/vistas'), { index: 'premios1User.html' }));
 app.use('/premios23/premios2', express.static(path.join(__dirname, 'www/minis/vistas'), { index: 'premios2User.html' }));
 app.use('/premios23/correct', express.static(path.join(__dirname, 'www/minis/vistas'), { index: 'correct.html' }));
