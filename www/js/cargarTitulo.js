@@ -7,8 +7,11 @@ fetch("../data.json")
         let premioId = data.premios.indexOf(premio);
         titulo.textContent = data.titulo[premioId];
 
-        let video = document.querySelector("source");
-        video.src = "../media/pres/"+ premio +".mp4"
+        let video = document.getElementById("vid1PresNom")
+        let source = document.querySelector("source");
+        source.src = "../media/pres/"+ premio +".mp4"
+
+        video.load();
 
     })
     .catch(error => console.error("Error al cargar el archivo JSON: " + error));

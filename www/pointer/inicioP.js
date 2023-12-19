@@ -7,7 +7,7 @@ const dir = {
     "p23": ["inicio","p22","p21","presNom", "minis"],
     "p22": ["inicio","p23","p21"],
     "p21": ["inicio","p23","p22"],
-    "presNom": ["inicio","p23","nominados", "vid1", "vid2"],
+    "presNom": ["inicio","p23","nominados", "vid1"],
     "nominados": ["p23","presNom","ganador"],
     "ganador": ["inicio","p23","nominados"],
     "premios1" : ["p23", "mostrar", "ocultar"],
