@@ -3,6 +3,18 @@ const socket = io('/premios23/login');
 if (verCookie("usuario")!= ""){
     window.location.href = "/premios23/wait"
 }else{
+    document.getElementById('inpUser').addEventListener('input', function() {
+        // Obtén el valor actual del input
+        var valorInput = this.value;
+    
+        // Limita la longitud a 10 caracteres
+        if (valorInput.length > 10) {
+          // Si se supera la longitud permitida, corta el texto
+            this.value = valorInput.slice(0, 10);
+        }
+    });
+
+
     document.getElementById("butSend").addEventListener("click", (e)=>{
         
         let userInput = document.getElementById("inpUser").value;
