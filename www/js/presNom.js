@@ -4,6 +4,23 @@ localStorage.setItem("mini", "login")
 localStorage.removeItem("ganador");
 localStorage.setItem("url", 'presNom');
 
+let listVidId = {
+    "mvp": "WqB1CDrOGrQ",
+    "mejora": "GDcW7Nct2Xo",
+    "desmejora": "x62sKt5HCNI",
+    "noveno": "cDlP9SPcUNQ",
+    "momento": "w51AlyELdeM",
+    "meme": "_1tM-WYhMVE",
+    "foto": "zbyhx5_tk0o",
+    "video": "FqxLqWVLU7I",
+    "canción": "pP6bwSuSWyk",
+    "cardumen": "P_zpdMb2aDg",
+    "edit": "UCDoWwn7UU0",
+    "locura": "nxxEHELJEak",
+    "follador": "syqNfsfXsr8",
+    "outfit": "6B9pXQa80g"
+}
+
 //LOADER
 window.addEventListener("load", function() {
     document.querySelector(".loaderContent").style.display = "none";
@@ -27,29 +44,33 @@ socket.on("CAMBIO", (url)=>{
 
 //RECIBE SOCKET VIDP23
 let vidId;
+let player
 socket.on("VIDP23", (estado)=>{
-    vidId = estado;
-    let videoElement = document.getElementById(estado+"PresNom");
-    if (videoElement.style.display == "none"){
-        videoElement.style.display = 'block';
-        videoElement.play();
-    }else{
-        videoElement.style.display = "none";
-        videoElement.pause();
-        videoElement.currentTime = 0;
-    }
-});
-//RECIBE SOCKET PLAYP23
-socket.on("PLAYP23", (estado)=>{
-    let videoElement = document.querySelector("video");
-    if (estado == "play"){
-        videoElement.play();
-    }else{
-        videoElement.pause();
-    }
-    console.log(estado);
-});
 
-document.querySelector("video").addEventListener('ended', function() {
-    videoElement.currentTime = 0;
+    let currentPremio = localStorage.getItem("premio");
+
+    if (player) {
+        if (document.querySelector("iframe").style.display != "none"){
+            player.pauseVideo();
+            document.querySelector("iframe").style.display = "none"
+        }
+    }    
+    
+    var videoId = listVidId[currentPremio];
+
+    player = new YT.Player('reproductor', {
+        height: '100%',
+        width: '100%',
+        videoId: videoId,
+        events: {
+            'onReady': onPlayerReady
+        }
+    });
+
+function onPlayerReady(event) {
+    // Reproduce el video cuando el usuario interactúa con la página
+    event.target.playVideo();
+}
+
+
 });
