@@ -5,10 +5,14 @@
     "aef&lt;fe&lt;fe"
   ],
   "pregAcertar": [
-    "preg blabalba"
+    "preg1blablabal",
+    "preg2 pabapeae",
+    "jochepreg3"
   ],
   "solAcertar": [
-    "koux"
+    "koux",
+    "jime",
+    "joche"
   ],
   "pregKahoot": [
     "aefaefaefae"
@@ -24,5 +28,5 @@
   "solKahoot": [
     "aefafe"
   ],
-  "current": "login"
+  "current": "acertarUser"
 }

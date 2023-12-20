@@ -135,15 +135,25 @@
     border-radius: 20px 0 0 20px;
 }
 
-.resolucion > .resultado{
+
+.resolucion > .contResol{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: start;
     width: 100%;
     padding: 50px;
 }
 
-.resolucion > .resultado > .user{
+
+.resolucion > .contResol > .resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    padding: 20px;
+}
+
+.resolucion > .contResol > .resultado > .user{
     background-color: var(--colFondo);
     border-radius: 20px;
     width: 90%;
@@ -155,16 +165,16 @@
     text-transform: uppercase;
 }
 
-.resolucion > .resultado > .imgUsers{
+.resolucion > .contResol > .resultado > .imgUsers{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
     justify-content: center;
     padding: 10px;
 }
 
-.resolucion > .resultado > .imgUsers > div{
+.resolucion > .contResol > .resultado > .imgUsers > div{
     background-size: cover;
     background-position: center;
     border: 3px solid var(--colBorde);
@@ -172,4 +182,50 @@
     height: 70px;
     margin: 5px;
     border-radius: 100%;
+}
+
+
+.resolucion > .contResol > .ranking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 20px;
+}
+
+.resolucion > .contResol > .ranking > div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px;
+    padding: 20px;
+    font-family: "Gogh";
+    border-radius: 20px;
+    border: 3px solid var(--colFondo);
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+.resolucion > .contResol > .ranking > div > p{
+    position: absolute;
+    background-color: var(--colFondo);
+    color: white;
+    padding: 10px 20px ;
+    border-radius: 30px;
+    font-size: .8rem;
+    transform: translateY(+120%);
+}
+
+#pos1{
+    background-color: #ffd900c5;
+}
+
+#pos2{
+    background-color: #c0c0c0c7;
+}
+
+#pos3{
+    background-color: #cd8032bd;
 }

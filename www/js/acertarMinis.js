@@ -21,6 +21,11 @@ let listUser = [];
 let resetNum;
 let listaVot = 0;
 
+let rankPts = [0, 0, 0];
+let rankUser = ["...", "...", "..."];
+let ptsUser = []
+let inicioTiempoPreg;
+
 fetch("../minis/user.json")
 .then(response => response.json())
 .then(data => {
@@ -46,6 +51,50 @@ function eliminarChildsDeClase(className) {
     }
 }
 
+function calculatePuntuaje(user, tiempoFin){
+    let diferenciaEnMilisegundos = tiempoFin - inicioTiempoPreg;
+    let diferenciaEnSegundos = diferenciaEnMilisegundos / 1000;
+    let pts;
+
+    if (diferenciaEnSegundos === 0) {
+        pts = 1000; 
+    } else if (diferenciaEnSegundos >= 20) {
+        pts = 0;
+    } else {
+        let puntaje = 1000 - Math.floor(diferenciaEnSegundos * 50);
+        pts = Math.max(0, puntaje); 
+    }
+
+    ptsUser[listUser.indexOf(user)] = ptsUser[listUser.indexOf(user)] + pts;
+    
+    actualizarRanking(user, ptsUser[listUser.indexOf(user)])
+}
+
+function actualizarRanking(user, pts) {
+    var index = rankUser.indexOf(user);
+
+    if (index !== -1) {
+    rankPts[index] = pts;
+    } else {
+    rankUser.push(user);
+    rankPts.push(pts);
+    }
+
+    var sortedRanking = rankPts.map(function (value, index) {
+    return { user: rankUser[index], pts: value };
+    }).sort(function (a, b) {
+    return b.pts - a.pts;
+    });
+
+    rankUser = sortedRanking.slice(0, 3).map(function (element) {
+    return element.user;
+    });
+
+    rankPts = sortedRanking.slice(0, 3).map(function (element) {
+    return element.pts;
+    });
+}
+
 //RECIBE SOCKET ACCIÓN_ACERTAR
 socket.on("ACCIÓN_ACERTAR", (act)=>{
     if (act == "titulo"){
@@ -59,6 +108,8 @@ socket.on("ACCIÓN_ACERTAR", (act)=>{
         listaVot = 0;
         document.getElementById("acertarPreg").innerHTML = resetNum;
         eliminarChildsDeClase("imgUsers");
+
+        inicioTiempoPreg = new Date().getTime();
 
         if (pregunta.style.display == "none"){
             noneScreens();
@@ -112,6 +163,10 @@ socket.on("ACCIÓN_ACERTAR", (act)=>{
             socket.emit("RESOL", ["preg"+numPreg, data.pregAcertar[numPreg-1], data.solAcertar[numPreg-1]]);
         })
         .catch(error => console.error("Error al cargar el archivo JSON: " + error));
+
+        document.getElementById("pos1").innerHTML = rankUser[0] + "<p>"+ rankPts[0] +"pts.</p>"
+        document.getElementById("pos2").innerHTML = rankUser[1] + "<p>"+ rankPts[1] +"pts.</p>"
+        document.getElementById("pos3").innerHTML = rankUser[2] + "<p>"+ rankPts[2] +"pts.</p>"
     }
 });
 //RECIBE SOCKET CAMBIO
@@ -149,6 +204,9 @@ socket.on("VOTACION", (dataAcertar)=>{
                 document.querySelector(".imgUsers").appendChild(userCorrect);
             })
             .catch(error => console.error("Error al cargar el archivo JSON: " + error));  
+
+            let tiempoEnviado = new Date().getTime();
+            calculatePuntuaje(userName, tiempoEnviado);
         }
     })
     .catch(error => console.error("Error al cargar el archivo JSON: " + error));
@@ -158,8 +216,8 @@ socket.on("VOTACION", (dataAcertar)=>{
 socket.on("NEWUSER", (dataUser)=>{
     if (listUser.indexOf(dataUser) == -1){
         listUser.push(dataUser);
+        ptsUser.push(0);
     }
-    console.log(listUser)
     if (document.getElementById("acertarTit").innerHTML[2] == "/"){
         document.getElementById("acertarTit").innerHTML = listUser.length + document.getElementById("acertarTit").innerHTML.substring(1);
     }else{
