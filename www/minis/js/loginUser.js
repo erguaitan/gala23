@@ -3,6 +3,24 @@ const socket = io('/premios23/login');
 if (verCookie("usuario")!= ""){
     window.location.href = "/premios23/wait"
 }else{
+
+    Swal.fire({
+        title: '<strong>¡ATENCIÓN!</strong>',
+        icon: 'info',
+        html:
+            'El nombre de usuario e imagen que envies a continuación, te representará y será usado durante la Gala Atún 2023.<br><br>' +
+            'Si al enviar el formulario, y pasados 15 segundos, te redirige a esta página, introduce de nuevo los mismos datos y vuelve a intentarlo hasta que te registres correctamente.',
+        showCloseButton: true,
+        showCancelButton: false,
+        focusConfirm: false
+        /*
+        confirmButtonText: '<i class="fa fa-thumbs-up"></i> Confirmar',
+        confirmButtonAriaLabel: 'Confirmar',
+        cancelButtonText: '<i class="fa fa-thumbs-down"></i> Cancelar',
+        cancelButtonAriaLabel: 'Cancelar',
+        */
+    })
+
     document.getElementById('inpUser').addEventListener('input', function() {
         // Obtén el valor actual del input
         var valorInput = this.value;
