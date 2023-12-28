@@ -5,20 +5,20 @@ localStorage.removeItem("ganador");
 localStorage.setItem("url", 'presNom');
 
 let listVidId = {
-    "mvp": "0SOhEmNAMZM",
-    "mejora": "GDcW7Nct2Xo",
-    "desmejora": "x62sKt5HCNI",
-    "noveno": "cDlP9SPcUNQ",
-    "momento": "w51AlyELdeM",
-    "meme": "_1tM-WYhMVE",
-    "foto": "zbyhx5_tk0o",
-    "video": "FqxLqWVLU7I",
-    "canción": "pP6bwSuSWyk",
-    "cardumen": "P_zpdMb2aDg",
-    "edit": "UCDoWwn7UU0",
-    "locura": "nxxEHELJEak",
-    "follador": "syqNfsfXsr8",
-    "outfit": "6B9pXQa80g"
+    "mvp": "0SOhEmNAMZM",/* falta */
+    "mejora": "0SOhEmNAMZM",/* falta */
+    "desmejora": "0SOhEmNAMZM",/* falta */
+    "noveno": "0SOhEmNAMZM",/* falta */
+    "momento": "lclEf0snj6k",
+    "meme": "0SOhEmNAMZM",/* falta */
+    "foto": "0SOhEmNAMZM",/* falta */
+    "video": "giWuAZbNFBQ",
+    "canción": "0SOhEmNAMZM",/* falta */
+    "cardumen": "0SOhEmNAMZM",/* falta */
+    "edit": "wopRdX4Gvr0",
+    "locura": "0SOhEmNAMZM",/* falta */
+    "follador": "0SOhEmNAMZM",/* falta */
+    "outfit": "0SOhEmNAMZM"/* falta */
 }
 
 //LOADER

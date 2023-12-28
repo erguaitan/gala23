@@ -58,10 +58,10 @@ function calculatePuntuaje(user, tiempoFin){
 
     if (diferenciaEnSegundos === 0) {
         pts = 1000; 
-    } else if (diferenciaEnSegundos >= 20) {
+    } else if (diferenciaEnSegundos >= 40) {
         pts = 0;
     } else {
-        let puntaje = 1000 - Math.floor(diferenciaEnSegundos * 50);
+        let puntaje = 1000 - Math.floor(diferenciaEnSegundos * 25);
         pts = Math.max(0, puntaje); 
     }
 
