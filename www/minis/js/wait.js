@@ -12,7 +12,7 @@ const intervalo = setInterval(async () => {
     .catch(error => console.error("Error al cargar el archivo JSON: " + error));
 
     
-}, 300);
+}, 500);
 
 setTimeout(() => {
     clearInterval(intervalo);
@@ -20,4 +20,4 @@ setTimeout(() => {
     crearCookie("usuario", "");
     window.location.href ="/premios23/login";
 
-}, 5500);
+}, 15000);
