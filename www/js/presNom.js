@@ -5,20 +5,20 @@ localStorage.removeItem("ganador");
 localStorage.setItem("url", 'presNom');
 
 let listVidId = {
-    "mvp": "0SOhEmNAMZM",/* falta */
-    "mejora": "0SOhEmNAMZM",/* falta */
-    "desmejora": "0SOhEmNAMZM",/* falta */
-    "noveno": "0SOhEmNAMZM",/* falta */
+    "mvp": "_VNBGvbRa7k",
+    "mejora": "v9iCUSuGqG8",
+    "desmejora": "5t-UoROKW5I",
+    "noveno": "beiqPOsXCvA",
     "momento": "lclEf0snj6k",
-    "meme": "0SOhEmNAMZM",/* falta */
-    "foto": "0SOhEmNAMZM",/* falta */
+    "meme": "RY3Zf-U8I5s",
+    "foto": "sl1N6qMQoC8",
     "video": "giWuAZbNFBQ",
-    "canción": "0SOhEmNAMZM",/* falta */
-    "cardumen": "0SOhEmNAMZM",/* falta */
+    "canción": "zAp1FOn2WcY",
+    "cardumen": "wMuejvTsxRY",
     "edit": "wopRdX4Gvr0",
-    "locura": "0SOhEmNAMZM",/* falta */
-    "follador": "0SOhEmNAMZM",/* falta */
-    "outfit": "0SOhEmNAMZM"/* falta */
+    "locura": "cBNOVqw3zhA",
+    "follador": "WXVjsnSOJJA",
+    "outfit": "1hCR9USje3E"
 }
 
 //LOADER

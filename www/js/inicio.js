@@ -34,11 +34,14 @@ socket.on("CAMBIO", (url)=>{
 });
 
 //RECIBE SOCKET VIDP23
-var player1, player2;
+var player1, player2, player3, player4, player5;
 
 let listVidId = {
-    "vid1": "0SOhEmNAMZM",/* falta */
-    "vid2": "Ww1nj9r1LW8"/* falta */
+    "vid1": "zvDLvbwD2ts",/* caja_intro */
+    "vid2": "wH1cDdMQ0Jg"/* remember */,
+    "vid3": "1-ZEIDXi3SQ"/* novenos */,
+    "vid4": "oYwuhCmEYm4"/* cardumen */,
+    "vid5": "ZQULWNnWqCQ"/* canción */
 }
 
 function toggleVideo(videoId) {
@@ -54,6 +57,24 @@ function toggleVideo(videoId) {
             reproducirVideo(videoId, 'reproductor2');
         } else {
             ocultarVideo(player2, 'reproductor2');
+        }
+    } else if (videoId === listVidId['vid3']) {
+        if (!player2) {
+            reproducirVideo(videoId, 'reproductor3');
+        } else {
+            ocultarVideo(player3, 'reproductor3');
+        }
+    } else if (videoId === listVidId['vid4']) {
+        if (!player2) {
+            reproducirVideo(videoId, 'reproductor4');
+        } else {
+            ocultarVideo(player4, 'reproductor4');
+        }
+    } else if (videoId === listVidId['vid5']) {
+        if (!player2) {
+            reproducirVideo(videoId, 'reproductor5');
+        } else {
+            ocultarVideo(player5, 'reproductor5');
         }
     }
 }

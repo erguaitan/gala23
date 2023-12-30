@@ -12,7 +12,7 @@ function verCookie(valor){
 }
 
 function crearCookie(nombre, valor) {
-    let minutos = 120;
+    let minutos = 360;
     var fecha = new Date();
     fecha.setTime(fecha.getTime() + (minutos * 60 * 1000)); // Convierte minutos a milisegundos
 
