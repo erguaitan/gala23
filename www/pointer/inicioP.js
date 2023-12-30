@@ -2,7 +2,7 @@ const socket = io('/pointer');
 
 const dir = {
     "login": ["inicio"],
-    "inicio": ["p23","p22","p21","qr", "vid1", "vid2"],
+    "inicio": ["p23","p22","p21","qr", "vid1", "vid2","vid3","vid4","vid5"],
     "qr": ["inicio"],
     "p23": ["inicio","p22","p21","presNom", "minis"],
     "p22": ["inicio","p23","p21"],
